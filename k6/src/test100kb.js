@@ -16,5 +16,5 @@ export let options = {
 
 export default function () {
   const res = http.get('http://0.0.0.0:5000/file/100kb');
-  check(res, { "status for file 1mb is 200": (res) => res.status === 200 });
+  check(res, { "status for file 100kb is 200": (res) => res.status === 200 });
 }
